@@ -8,7 +8,7 @@ let a = 5
 let b = 0.1
 let c =  a + Int(b)
 
-print(a.isMultiple(of: 2))
+print(a.isMultiple(of: 5))
 
 var counter = 5
 counter *= 2

@@ -66,3 +66,11 @@ func getUser3() -> (firstName: String, lastName: String) {
 
 let (firstName, _) = getUser()
 print("Name: \(firstName)")
+
+//internal and exteral names for customizing parameter labels
+func isUppercase(_ string: String) -> Bool {
+    string == string.uppercased()
+}
+
+let response = isUppercase("HI")
+print(response)
