@@ -16,27 +16,27 @@ let utopia = Album(title: "Utopia", artist: "Travis Scott", year: 2023)
 print(utopia.artist)
 utopia.printSummary()
 
-//struct Employee {
-//    //Properties
-//    let name: String
-//    var vacationRemaining: Int
-//
-//    //Methods
-//    mutating func takeVacation(days: Int) {
-//        if vacationRemaining > days {
-//            vacationRemaining -= days
-//            print("I'm going on vacation!")
-//            print("Days remaining: \(vacationRemaining)")
-//        } else {
-//            print("Oops! There aren't enough days remaining.")
-//        }
-//    }
-//}
-//
-////Instance
-//var jacques =  Employee(name: "Jacques Webster", vacationRemaining: 17) //Initializer
-//jacques.takeVacation(days: 4)
-//print(jacques.vacationRemaining)
+struct Employee {
+    //Properties
+    let name: String
+    var vacationRemaining: Int
+
+    //Methods
+    mutating func takeVacation(days: Int) {
+        if vacationRemaining > days {
+            vacationRemaining -= days
+            print("I'm going on vacation!")
+            print("Days remaining: \(vacationRemaining)")
+        } else {
+            print("Oops! There aren't enough days remaining.")
+        }
+    }
+}
+
+//Instance
+var jacques =  Employee(name: "Jacques Webster", vacationRemaining: 17) //Initializer
+jacques.takeVacation(days: 4)
+print(jacques.vacationRemaining)
 
 struct Employee {
     let name: String
